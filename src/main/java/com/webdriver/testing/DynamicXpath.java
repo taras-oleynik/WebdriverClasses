@@ -23,5 +23,6 @@ public class DynamicXpath {
         driver.findElement(By.xpath("//*[@id='gs_htif0']")).sendKeys("Selenium");
       List<WebElement> list= driver.findElements(By.xpath("//*[contains(@id,'sbse2')]/div"));
       System.out.print(list.size());
+      list.get(0).click();
     }
 }
