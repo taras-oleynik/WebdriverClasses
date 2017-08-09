@@ -17,12 +17,13 @@ public class DynamicXpath {
         System.setProperty("webdriver.gecko.driver", "D:\\Taras\\automation\\webdrivercalsses\\src\\main\\resources\\bin\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
-        driver.get("https://www.google.com.ua");
+        driver.get("https://www.google.com.ua/");
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='gs_htif0']")).sendKeys("Selenium");
-      List<WebElement> list= driver.findElements(By.xpath("//*[contains(@id,'sbse2')]/div"));
-      System.out.print(list.size());
-      list.get(0).click();
+      List<WebElement> list= driver.findElements(By.xpath("//*[contains(@id,'sbse')]/div[2]"));
+      //System.out.print(list.size());
+      list.get(1).click();
+      driver.quit();
     }
 }
