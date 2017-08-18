@@ -18,7 +18,7 @@ public class RadioButton {
         driver.get("http://www.echoecho.com/htmlforms10.htm");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-       List<WebElement> list =  driver.findElements(By.xpath(".//input[@name='group1']"));
+       List<WebElement> list =  driver.findElements(By.xpath("//input[@name='group1']"));
         System.out.println(list.size());
 
         for (WebElement e: list){

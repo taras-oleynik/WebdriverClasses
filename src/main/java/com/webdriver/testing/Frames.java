@@ -16,7 +16,7 @@ public class Frames {
         System.setProperty("webdriver.gecko.driver", "D:\\Taras\\automation\\webdrivercalsses\\src\\main\\resources\\bin\\geckodriver.exe");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://jqueryui.com/draggable/");
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         List<WebElement> list = driver.findElements(By.tagName("iframe"));
